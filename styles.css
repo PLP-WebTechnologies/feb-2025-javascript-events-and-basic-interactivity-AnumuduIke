@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background: url("images/hero-bg.jpg");
+    background: url("hero-bg.jpg");
     background-position: center;
     background-size: cover;
 }
