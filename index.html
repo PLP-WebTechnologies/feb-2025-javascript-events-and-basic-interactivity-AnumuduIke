@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo">Coffee<span>.</span></a>
+        <ul class="menu-links">
+            <span id="close-btn"><i class="ri-close-line"></i></span>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+        <span id="menu-btn"><i class="ri-menu-line"></i></span>
+    </nav>
+</header>
+
+<section class="container">
+    <div class="content">
+        <h1>Start your day with fresh coffee</h1>
+        <p>
+            We provide the best coffee. our beans are well groomed under the best agricultural practices and we
+            provide exquisite refinement to give you the coffee taste you can never forget. 
+        </p>
+        <button id="main-btn" class="interactive-btn">Order now</button>
+        <div id="secret-message" class="secret-message"></div>
+    </div>
+</section>
+
+<section id="products" class="section">
+    <h2>Our Products</h2>
+    <div class="slideshow">
+        <div class="slide active">
+            <img src="images/coffee1.jpg" alt="Coffee 1">
+            <div class="slide-text">Arabica Blend</div>
+        </div>
+        <div class="slide">
+            <img src="images/coffee2.jpg" alt="Coffee 2">
+            <div class="slide-text">Robusta Supreme</div>
+        </div>
+        <div class="slide">
+            <img src="images/coffee3.jpg" alt="Coffee 3">
+            <div class="slide-text">Espresso Special</div>
+        </div>
+        <button class="slide-btn prev">❮</button>
+        <button class="slide-btn next">❯</button>
+    </div>
+</section>
+
+<section id="testimonials" class="section">
+    <h2>Testimonials</h2>
+    <div class="tabs">
+        <div class="tab-header">
+            <div class="tab-btn active">Customer 1</div>
+            <div class="tab-btn">Customer 2</div>
+            <div class="tab-btn">Customer 3</div>
+        </div>
+        <div class="tab-content active">
+            <p>"Best coffee I've ever had! Will definitely order again."</p>
+        </div>
+        <div class="tab-content">
+            <p>"Fast delivery and amazing quality. Highly recommended!"</p>
+        </div>
+        <div class="tab-content">
+            <p>"The aroma is incredible. Worth every penny."</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contact-form" class="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password (for account):</label>
+            <input type="password" id="password" required minlength="8">
+            <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <span class="error-message"></span>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+        <div id="form-status"></div>
+    </form>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
